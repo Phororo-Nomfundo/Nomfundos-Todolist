@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>todo-list</title>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="style.css" rel="stylesheet" />
+ 
+</head>
+<body>
+
+    <header>
+        <h1>Nomfundo's Todo List</h1>
+
+    </header>
+    <form >
+        <div class="header">
+
+
+            <input id="textbox" type="text" class="todo-input" placeholder="Enter your task"/>
+            <button class="todo-button" type="submit">
+                <i class="fas fa-plus"></i>
+             
+            </button>
+           
+        </div>
+    </form>
+    <h2>My Tasks</h2>
+    <div class="styled-select">
+        <select id="filter-todo" size="3">
+          <optgroup label="">
+              <option value="all">All</option>
+          </optgroup>
+          <optgroup label="">
+              <option value="completed">Completed</option>
+          </optgroup>
+          <optgroup label="">
+              <option value="notcompleted">Not Completed</option>
+          </optgroup>
+        </select>
+      </div>
+    <div class="container">
+
+        <ul class="myList"></ul>
+    </div>
+ 
+    <script src="Utilities.js"></script>
+</body>
+</html>
