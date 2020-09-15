@@ -6,7 +6,8 @@
 body {
     
  
-    background-color:  #987678;
+    /* background-color:  #987678; */
+    background-color: #F2F2F2;
 
     
 }
@@ -21,12 +22,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+   
     
 }
 h2,h1 {
    text-align :center;
-   font-weight: 900;
-   font-family: "Freestyle Script";
+   font-weight: 500;
+   font-family: "Papyrus";
  
 }
 form input, form button{
@@ -35,8 +37,11 @@ form input, form button{
     border: none;
     background: white;
     height: 1.7em;
+    font-family: 'Ink Free';
 }
-
+form input{
+    width: 45%;
+}
 form button {
     color:#5A5556 ;
     cursor: pointer;
@@ -56,7 +61,7 @@ form button:hover {
     justify-content: center;
     align-items: center;
     background-color: #e5e2e5;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     width:50%;
    
@@ -103,7 +108,7 @@ form button:hover {
    
     min-width: 99%;
     list-style: none;
-    font-family: "Freestyle Script";
+    font-family: "Ink Free";
   
 }
 .delete, .completed{
@@ -132,69 +137,36 @@ form button:hover {
 
 }
 select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+  
     outline: none;
     border: none;
-    background-color:#5A5556;
+    background-color:#dac5c5;
+    outline-color: initial;
+    outline-style: initial;
+    outline-width: 0px;
+color: #000000DE;
+box-shadow: 0 2px 4px 0 rgba(34,36,38,.15);
+border-radius: .28571429rem;
+min-height: 2.85714286em;
+font-family: "Papyrus";
+font-size: large;
 }
 select {
-    display:inline-block;
-    overflow:hidden;
-    margin-top:30px;
-    margin-left: 30%;
-    overflow-x:hidden;
+    /* display:inline-block; */
+ 
+    margin: auto;
+    text-align: center;
+ 
     height:25px;
     justify-content: center;
     align-items: center;
-    
+    padding: 0.1rem;
+    font-size: 1.1rem;
+    border: none;
+    width: 100%;
+  }
 
-  }
-  .styled-select{
-    justify-content: center;
-    align-items: center;
-    margin-left: 32%;
-  
-  }
    
-  .styled-select select {
-    margin: -1px -20px -5px -5px;
+ 
    
-  }
-   
-  optgroup {
-    position:relative;
-    display:inline-block;
-    width:170px;
-    padding-left:5px;
-    padding-right: 0px;
-    height:100px;
-  }
-  
-  optgroup:nth-child(1) {
-    visibility:hidden;
-  }
-   
-  .styled-select select option{
-    visibility:visible;
-    position:absolute;
-    display:inline-block;
-    width:130px;
-    margin-left:12px !important;
-    padding-top:-10px !important;
-    margin-top:-16px !important;
-    text-align: center;
-    color: #888;
-    font-size: 19px;
-    font-family: Lato, sans-serif;
-    cursor: pointer;
-    
-  }
-   
-  .styled-select select option::before{
-    content: none;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin: 0 0 0 0;
-  }
+
